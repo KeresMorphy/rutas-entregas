@@ -1,0 +1,19 @@
+<!-- pruebas.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Detalles del Folio
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="folioHeader">
+    <h1>{{ folioHeader.titulo }}</h1>
+    <p>{{ folioHeader.descripcion }}</p>
+    <!-- Puedes agregar más elementos HTML según la estructura de tu respuesta del servidor -->
+  </div>
+  <div *ngIf="!folioHeader">
+    <p>Cargando datos...</p>
+  </div>
+</ion-content>
